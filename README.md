@@ -4,24 +4,59 @@
 
 セージグリーンの見出し帯と白基調の背景に、ハムスターの写真や装飾を組み合わせた温かみのあるデザインです。ブラウンの本文、アクセントカラーの小見出し、色付きの罫線でメリハリを付けています。
 
-👉 **[スライドのプレビュー](https://nagisblog.github.io/slide-template/)**
+👉 **[スライドのプレビュー（GitHub Pages）](https://nagisblog.github.io/slide-template/)**
 
-## 起動
+---
 
-Node.js 22.12以上（または対応する新しいLTS）を使用します。
+## このテンプレートの使い方
 
+### 1. テンプレートからリポジトリを作成
+このリポジトリ上部の **「Use this template」** ボタン → **「Create a new repository」** をクリックして、新しいリポジトリを作成します。
+
+### 2. ローカルにクローンして依存関係をインストール
 ```sh
+git clone https://github.com/nagisblog/slide-template.git
+cd slide-template
 npm install
+```
+> ※ Node.js 22.12 以上が必要です。
+
+### 3. 開発サーバーを起動
+```sh
 npm run dev
 ```
+ブラウザが自動で開き、スライドのリアルタイムプレビューが表示されます。
 
-`slides.md`を編集するとプレビューに反映されます。
+### 4. スライドを編集
+- **`slides.md`** を編集してテキストやページ内容を変更します（保存するとブラウザが即時更新されます）。
+- 好きなレイアウトを `slides.md` からコピー＆ペーストしてページを増やしてください。
+- 写真は `public/images/` に置き、frontmatter の `image:` でパスを指定します（例: `image: /images/your-photo.jpg`）。
 
-```sh
-npm run build    # 静的サイトをdist/に出力
-npm run export   # PDFを書き出し
-```
+---
 
+## 🛠️ 各種コマンド
+
+| コマンド | 説明 |
+| :--- | :--- |
+| `npm run dev` | 開発サーバーを起動（ブラウザが自動で開きます） |
+| `npm run export` | スライドを **PDF** に書き出し (`slides-export.pdf`) |
+| `npm run build` | 公開用Webサイトとして `dist/` に出力 |
+| `npm run preview` | ビルドした `dist/` の動作を確認 |
+
+---
+
+## 🌐 GitHub Pages でプレビューを公開する場合
+
+作成した自分のリポジトリでも同じようにスライドを公開したい場合：
+
+1. **リポジトリの Settings** → **Pages** を開く
+2. **Build and deployment** の **Source** を **`GitHub Actions`** に設定する
+3. [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) 内のビルドベースパスをご自身のリポジトリ名に合わせて修正：
+   ```yaml
+   # 例: リポジトリ名が my-slides の場合
+   - run: npm run build -- --base /my-slides/
+   ```
+4. main ブランチに push すると自動でデプロイされます。
 ## レイアウト
 
 17枚のサンプルから必要なページを複製・削除して使います。
@@ -169,6 +204,11 @@ console.log('Hello')
 
 目次は横長写真の全体が見える配置です。章扉2枚はffmpegでハムスターとカップが見える縦長の構図に切り出し、切り出し前の画像もpublic/images/に残しています。`split`の2つのサンプルにも画像を設定しています。
 
-## クレジット
+## クレジット・画像ライセンス
 
-サンプルに含まれる写真は [Unsplash](https://unsplash.com/) の素材を使用しています。実際のプレゼンテーションでは、用途に合った画像に差し替えてください。
+- サンプルに含まれる写真は [Unsplash](https://unsplash.com/) の素材を使用しています。
+- **画像の著作権は各著作者に帰属します**。Unsplash License に基づいて利用されていますが、実際のプレゼンテーション作成・公開にあたってはご自身で用意された画像に差し替えてご使用ください。
+
+## ライセンス
+
+本テンプレートのソースコード（レイアウト・スタイル・設定ファイル等）は [MIT License](LICENSE) のもとで公開されています。商用・非商用問わず自由にご利用・改変いただけます。
