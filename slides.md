@@ -18,7 +18,6 @@ drawings:
 transition: fade
 layout: cover
 image: /images/cover-photo.jpg
-imageAlt: 白い花とガラスの花瓶の前にいる白いハムスター
 ---
 
 # プレゼンテーションの<br>タイトル
@@ -78,7 +77,6 @@ side: left
 ---
 layout: section
 image: /images/section2-crop.jpg
-imageAlt: ピンクの背景でガラスのカップから顔を出すハムスター
 ---
 
 # 提案内容
@@ -277,7 +275,6 @@ side: right
 layout: split
 side: left
 image: /images/example-photo.jpg
-imageAlt: 赤い背景のカップから顔を出すハムスター
 ---
 
 # 事例の紹介
@@ -355,7 +352,6 @@ layout: default
 ---
 layout: closing
 image: /images/closing-photo.jpg
-imageAlt: かごの中で顔を洗う白いハムスター
 ---
 
 # ありがとうございました
