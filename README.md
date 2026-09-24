@@ -4,7 +4,7 @@
 
 セージグリーンの見出し帯と白基調の背景に、ハムスターの写真や装飾を組み合わせた温かみのあるデザインです。ブラウンの本文、アクセントカラーの小見出し、色付きの罫線でメリハリを付けています。
 
-👉 **[スライドのプレビュー（GitHub Pages）](https://nagisblog.github.io/slide-template/)**
+👉 **[スライドのプレビュー（GitHub Pages）](https://nagisblog.github.io/slidev-hamster-template/)**
 
 ---
 
