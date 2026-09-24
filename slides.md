@@ -173,45 +173,6 @@ layout: three-rows
 
 ::title::
 
-# 取り組みの流れと各ステップの内容
-
----
-layout: code-explain
----
-
-::code::
-
-<p class="code-caption">JavaScript / 有効なユーザーの名前を取り出す</p>
-
-```js
-const users = [
-  { name: 'Aki', active: true },
-  { name: 'Ren', active: false },
-  { name: 'Yui', active: true },
-]
-const names = users
-  .filter(user => user.active)
-  .map(user => user.name)
-console.log(names)
-// ['Aki', 'Yui']
-```
-
-::explanation::
-
-## 1. 入力データを用意する
-
-名前と有効・無効の状態を持つ、3人分の配列を定義します。
-
-## 2. filter で絞り込む
-
-`active` が `true` の要素を残します。Ren は対象から外れます。
-
-## 3. map で名前を取り出す
-
-残った要素を名前に変換し、`['Aki', 'Yui']` を返します。
-
-::title::
-
 # コード例：配列の絞り込みと変換
 
 ---

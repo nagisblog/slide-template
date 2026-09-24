@@ -186,28 +186,12 @@ console.log('Hello')
 
 ## 写真の差し替え
 
-右上のマークは表示していません。写真を`public/images/`に置き、`slides.md`の`image`と`imageAlt`を編集してください。
-
-## 配置済みの写真
-
-用意された写真をpublic/images/に配置して使用しています。直下にあった同一内容の画像は整理済みです。
-
-| ページ | 元ファイル | 使用ファイル |
-| --- | --- | --- |
-| 表紙 | 表題.jpg | cover-photo.jpg |
-| 目次 | 目次.jpg | agenda-photo.jpg |
-| 章扉1 | section1.jpg | section1-crop.jpg |
-| 章扉2 | section2.jpg | section2-crop.jpg |
-| 謝辞 | 謝辞.jpg | closing-photo.jpg |
-| 背景と目的 | 背景.jpg | background-photo.jpg |
-| 事例の紹介 | 事例.jpg | example-photo.jpg |
-
-目次は横長写真の全体が見える配置です。章扉2枚はffmpegでハムスターとカップが見える縦長の構図に切り出し、切り出し前の画像もpublic/images/に残しています。`split`の2つのサンプルにも画像を設定しています。
+写真を`public/images/`に置き、`slides.md`の`image`と`imageAlt`を編集してください。
 
 ## クレジット・画像ライセンス
 
 - サンプルに含まれる写真は [Unsplash](https://unsplash.com/) の素材を使用しています。
-- **画像の著作権は各著作者に帰属します**。Unsplash License に基づいて利用されていますが、実際のプレゼンテーション作成・公開にあたってはご自身で用意された画像に差し替えてご使用ください。
+- **画像の著作権は各著作者に帰属します**。Unsplash License に基づいて利用されていますが、実際のプレゼンテーション作成・公開にあたってはご自身でライセンスをご確認ください。
 
 ## ライセンス
 
