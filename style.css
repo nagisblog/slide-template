@@ -59,7 +59,7 @@
 .cover-media { position: absolute; inset: 0 0 0 59%; background: #ecefeb; color: #59635d; }
 .cover-frame { position: absolute; left: 9.5%; top: 18.5%; width: 56%; min-height: 63%; border: 1px solid var(--rule); border-top: 6px solid var(--sage); padding: 55px 36px; text-align: center; background: #fffffff2; display: flex; flex-direction: column; justify-content: center; }
 .cover-frame h1 { font-size: 46px; color: var(--sage); }
-.cover-frame p { font-size: 22px; margin: 24px 0 0; }
+.cover-frame p { font-size: 22px; margin: 24px 20px 0; text-align: right; }
 .cover-frame hr { margin: 24px 20px 0; }
 .sage-agenda main { position: absolute; left: 9%; top: 24%; width: 57%; }
 .sage-agenda h1 { color: var(--sage); padding-bottom: 22px; border-bottom: 3px solid var(--sage); margin-bottom: 22px; }
@@ -71,7 +71,7 @@
 .section-media.has-image::after { content: ''; position: absolute; inset: 0; background: #ffffffb3; }
 .section-frame { position: absolute; left: 11%; top: 26%; width: 78%; min-height: 48%; border: 1px solid var(--rule); border-left: 8px solid var(--sage); padding: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center; background: #fffffff2; }
 .section-frame h1 { font-size: 44px; color: var(--sage); }
-.section-frame p { margin: 25px 0 0; }
+.section-frame p, .section-frame h1 + p { margin: 42px 0 0; }
 .sage-split .split-media { position: absolute; top: 0; bottom: 0; width: 37%; }
 .sage-split.media-right .split-media { right: 0; }
 .sage-split.media-left .split-media { left: 0; }
@@ -138,7 +138,7 @@
 .sage-section:has(.section-media.has-image) .section-media { inset: 0 0 0 auto; width: 44%; height: 100%; background: white; }
 .sage-section:has(.section-media.has-image) .section-media::after { display: none; }
 .sage-section:has(.section-media.has-image) .section-media img { object-fit: cover !important; }
-.sage-section:has(.section-media.has-image) .section-frame { left: 6%; top: 26%; width: 43%; padding: 32px; }
+.sage-section:has(.section-media.has-image) .section-frame { left: 9%; top: 26%; width: 45%; padding: 32px 12px 32px 32px; }
 .sage-section:has(.section-media.has-image) .section-frame h1 { font-size: 40px; }
 .sage-closing main { left: 6%; width: 49%; padding: 36px 0; background: white; }
 .sage-closing h1 { font-size: 36px; }
